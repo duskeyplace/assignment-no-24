@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="happy('hello world')">click me</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Click on an image to see a message</h2>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkvDaVIr617DcQVHP6R2yE7wJWiPI8Bi4jw&s"
+      alt="Mobile 1"
+      onclick="showMessage('You clicked on Mobile 1!')"
+    />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkvDaVIr617DcQVHP6R2yE7wJWiPI8Bi4jw&s"
+      alt="Mobile 2"
+      onclick="showMessage('You clicked on Mobile 2!')"
+    />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkvDaVIr617DcQVHP6R2yE7wJWiPI8Bi4jw&s"
+      alt="Mobile 3"
+      onclick="showMessage('You clicked on Mobile 3!')"
+    />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Student Records</h2>
+
+    <table id="studentTable">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>18</td>
+        <td>A</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>19</td>
+        <td>B</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Image Change</h2>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwYfCHwbGGeFs9hyKTfmW43yJ3yTqL8dwJQ&s"
+      id="myImage"
+      onmouseover="changeImage()"
+      onmouseout="resetImage()"
+    />
+
+
+    
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Counter</h2>
+
+<p>Counter value: <span id="counterValue">0</span></p>
+
+<button onclick="increaseCounter()">Increase</button>
+<button onclick="decreaseCounter()">Decrease</button>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2>Signup Form</h2>
+
+<form id="signupForm">
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p id="formResult"></p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<h2>Item Details</h2>
+
+<div id="contentArea">
+  <p>Some details about the item...</p>
+  <button onclick="readMore()">Read more</button>
+</div>
+
+<div id="fullDetails" style="display:none;">
+  <p>Full details about the item...</p>
+</div>
+
+  </body>
+  <script src="app.js"></script>
+</html>
